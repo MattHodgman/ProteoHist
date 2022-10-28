@@ -1,5 +1,5 @@
 # ProteoPath
-An AI method for predicting tumor protein expression from H&amp;E histopathology whole-slide images.
+An AI method for predicting spatial tumor protein expression from H&amp;E histopathology whole-slide images.
 
 ## Data Aquisition
 Download whole-slide images and protein expression data from CPTAC. We split the data into three groups
