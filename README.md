@@ -1,4 +1,4 @@
-# ProteoPath
+# ProteoHist
 An AI method for predicting spatial tumor protein expression from H&amp;E histopathology whole-slide images.
 
 ## Data Aquisition
@@ -24,10 +24,10 @@ Clone CLAM and set up conda environment.
 2. Identify and remove any images that were not segmented correctly.
 3. Use CLAM (ResNet50 trained on ImageNet) to extract features for each patch.
 
-## Run Multiclass Classification/Prediction Multi-Layer Perceptron (MLP)
+## Run Multioutput regression
 1. Split cases and controls, by patient, into training and validation sets.
-2. Train and validate MLP with patch features as input and protein expression as output.
-3. Test MLP on test set that contains both tumor and normal tissue.
+2. Train and validate linear regression model with patch features as input and protein expression as output.
+3. Test model on test set that contains both tumor and normal tissue.
 
 ## Create Heat Maps
 Stitch patches back together to recreate image of tissue slide and color each patch by protein expression.
