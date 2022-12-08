@@ -14,10 +14,7 @@ Decide which proteins you would like to predict. We recommend those that are bot
 Explore the associated metadata to identify potential biases or batch effects.
 
 ## Directory Organization
-Split case and control images into separate directories.
-
-## Environment Setup
-Clone CLAM and set up conda environment.
+We create a `Data` folder for all data. Within it are `Metadata`, `Images`, and `ExpressionData` folders. Within `Images` are the directories `raw_images`, `heat_maps`, and `clam_output`. Both the `raw_images` and `clam_output` folders have three subfolders: `both`, `normal`, and `tumor`. CLAM will create subdirectories under those three directories.
 
 ## Preprocess images
 1. Use CLAM to segment the whole-slide images and extract patch coordinates.
