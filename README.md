@@ -2,13 +2,13 @@
 An AI method for predicting spatial tumor protein expression from H&amp;E histopathology whole-slide images.
 
 ## Data Aquisition
-Download whole-slide images and protein expression data from CPTAC. We split the data into three groups
-- slides of normal tissue (controls)
-- slides of of at least 90% tumor tissue (cases)
-- slides with both tumor and normal tissue (test set)
+Download CPTAC endometrial cancer whole-slide images from [here](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=33948263) and protein expression data from [this paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7233456/). We split the data into three groups
+- slides of normal tissue ("normal")
+- slides of of at least 90% tumor tissue ("tumor")
+- slides with both tumor and normal tissue ("both")
 
 ## Decide Protein Expression Targets
-Decide which proteins you would like to predict. We recommend those that are both significantly differentially expressed between cases and control and have a large effect size. Additionally, it would be impactful if the proteins have a known drug interaction. Next, decide if you want to bin protein expression into low, medium, and high expression values or use a regression model to predict expression between 0-1.
+Decide which proteins you would like to predict. We recommend those that are both significantly differentially expressed between tumor and normal and have a large effect size. Additionally, it would be impactful if the proteins have a known drug interaction.
 
 ## Metadata
 Explore the associated metadata to identify potential biases or batch effects.
